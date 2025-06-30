@@ -11,3 +11,21 @@
             min-height: calc(100vh - 15vh);
             max-height: auto;
         }
+
+        .nav-item {
+            border-radius: 1.2rem;
+            -webkit-border-radius: 1.2rem;
+            -moz-border-radius: 1.2rem;
+            -ms-border-radius: 1.2rem;
+            -o-border-radius: 1.2rem;
+}
+
+        .nav-item:hover {
+            background-color: #fd7e14 ;
+            transition: 2s;
+            -webkit-transition: 2s;
+            -moz-transition: 2s;
+            -ms-transition: 2s;
+            -o-transition: 2s;
+
+}
