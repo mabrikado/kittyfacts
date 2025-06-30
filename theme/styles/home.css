@@ -1,0 +1,13 @@
+        body {
+            background:#fd7e14; 
+        }
+
+        header {
+            height: 15vh;
+            height: 15dvh;
+        }
+
+        main {
+            min-height: calc(100vh - 15vh);
+            max-height: auto;
+        }
