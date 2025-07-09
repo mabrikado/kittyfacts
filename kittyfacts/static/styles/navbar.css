@@ -1,0 +1,67 @@
+        header {
+            height: 8vh;
+            height: 8dvh;
+        }
+
+        main {
+            background:#fd7e14;
+            min-height: 92h;
+            min-height: 92dvh;
+            max-height: auto;
+        }
+
+        .nav-item {
+            border-radius: 1.2rem;
+            -webkit-border-radius: 1.2rem;
+            -moz-border-radius: 1.2rem;
+            -ms-border-radius: 1.2rem;
+            -o-border-radius: 1.2rem;
+        }
+
+        .nav-item:hover {
+            background-color: #fd7e14 ;
+            transition: 2s;
+            -webkit-transition: 2s;
+            -moz-transition: 2s;
+            -ms-transition: 2s;
+            -o-transition: 2s;
+
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fd7e14' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+}
+        .resultAnchor:hover {
+            background:#fd7e14;
+        }
+
+        .resultAnchor:hover a{
+            color:white !important;
+        }
+
+        .submit {
+            outline:1px solid #fd7e14;
+            color:#fd7e14;
+        }
+
+        .submit:hover {
+            background:#fd7e14;
+            color:white
+        }
+
+        footer {
+            background:#fd7e14;
+        }
+
+        @media screen and (max-width: 992px) {
+        #searchResult {
+            width: 95vw;
+            }
+        }

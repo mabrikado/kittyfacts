@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,46 +16,12 @@
         crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="{% static "styles/navbar.css" %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        header {
-            height: 8vh;
-            height: 8dvh;
-        }
-
-        main {
-            background:#fd7e14;
-            min-height: 92h;
-            min-height: 92dvh;
-            max-height: auto;
-        }
-
-        .nav-item {
-            border-radius: 1.2rem;
-            -webkit-border-radius: 1.2rem;
-            -moz-border-radius: 1.2rem;
-            -ms-border-radius: 1.2rem;
-            -o-border-radius: 1.2rem;
-        }
-
-        .nav-item:hover {
-            background-color: #fd7e14 ;
-            transition: 2s;
-            -webkit-transition: 2s;
-            -moz-transition: 2s;
-            -ms-transition: 2s;
-            -o-transition: 2s;
-
-        }
-
-        footer {
-            background:#fd7e14;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,6 +36,9 @@
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
+
+
+
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -80,6 +50,11 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"
     ></script>
+
+    <script src = "{% static "script/searchBar.js" %}">
+            
+
+        </script>
 
 </body>
 </html>
