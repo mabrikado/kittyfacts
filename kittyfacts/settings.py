@@ -24,7 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#tjs)%kc%lt1%50^#xox(@)@*7y*mc7kiredq!p+mba27l6air'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
+
 
 ALLOWED_HOSTS = [
     "https://kittyfacts.vercel.app/"
@@ -42,10 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jazzmin',
     'main',
-    'rest_framework'
+    'rest_framework',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
