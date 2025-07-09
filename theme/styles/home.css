@@ -27,6 +27,7 @@
             -moz-transition: 2s;
             -ms-transition: 2s;
             -o-transition: 2s;
+<<<<<<< HEAD
         }
         
         .navbar-toggler-icon {
@@ -52,3 +53,7 @@
             background:#fd7e14;
         }
 
+=======
+
+}
+>>>>>>> 7c4f4089aeeb2cb6c93cbc56c0ff6d1087cf6c89
