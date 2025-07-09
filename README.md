@@ -24,7 +24,7 @@ To set up the project locally, follow these steps:
 
 bash
 
-git clone https://github.com/yourusername/kittyfacts.git
+git clone https://github.com/mabrikado/kittyfacts.git
 cd kittyfacts
 
 Set up a virtual environment:
