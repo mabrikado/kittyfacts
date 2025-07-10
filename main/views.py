@@ -28,6 +28,13 @@ def fact(request, title:str):
 def about(request):
     return render(request, "about.html", {"title": "About KittyFacts"})
 
+def _404(request):
+    return render(request, "home.html", {
+        "title":"Not Found",
+        "fact_title":"Ooops!!",
+        "fact_description":"It seems the page you are looking for does not exist"
+    })
+
 class GetCatFacts(APIView):
     def get(self, request):
         title = request.GET.get("title")

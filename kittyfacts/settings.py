@@ -24,13 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#tjs)%kc%lt1%50^#xox(@)@*7y*mc7kiredq!p+mba27l6air'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
-DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
-
-
-ALLOWED_HOSTS = [
-    "https://kittyfacts.vercel.app/"
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
